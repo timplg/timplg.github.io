@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<!--Documentation link https://www.facebook.com/business/help/1453404994974615 -->
+
+<head>
+
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8">
+    <title>Product List Genie Pixel Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Search Engine -->
+    <meta name="description" content="Replaces the correct value like store name and email">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Product List Genie Pixel Generator">
+    <meta itemprop="description" content="Replaces the correct value like store name and email">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Product List Genie Pixel Generator">
+    <meta name="og:description" content="Replaces the correct value like store name and email">
+    <meta name="og:site_name" content="Product List Genie Pixel Generator">
+    <meta name="og:type" content="website">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            background: #d85d4d;
+            ;
+        }
+
+        a {
+            color: #d85d4d;
+        }
+
+        a:hover {
+            color: #f52630;
+        }
+
+        textarea {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="jumbotron text-center">
+        <h1>Product List Genie Pixel Generator</h1>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-10 offset-1">
+
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="storename">Pixel ID</label>
+                            <input type="text" class="form-control" placeholder="Awesome Store" id="pixelID">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-12 py-5">
+
+                <!-- <ul class="nav nav-pills">
+                            <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+                            <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+                            <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
+                          </ul> -->
+                <nav class="nav nav-pills nav-justified">
+                    <a class="nav-item nav-link active" id="page-view-tab" data-toggle="pill" href="#page-view" role="tab" aria-controls="page-view" aria-selected="true">Page View</a>
+                    <a class="nav-item nav-link" id="add-to-cart-tab" data-toggle="pill" href="#add-to-cart" role="tab" aria-controls="add-to-cart" aria-selected="false">Add To Cart</a>
+                    <a class="nav-item nav-link" id="purchase-tab" data-toggle="pill" href="#purchase" role="tab" aria-controls="purchase" aria-selected="false">Purchase</a>
+                    <a class="nav-item nav-link" id="upsell1-tab" data-toggle="pill" href="#upsell1" role="tab" aria-controls="upsell1" aria-selected="false">Upsell 1</a>
+                    <a class="nav-item nav-link" id="upsell2-tab" data-toggle="pill" href="#upsell2" role="tab" aria-controls="upsell2" aria-selected="false">Upsell 2</a>
+                    <a class="nav-item nav-link" id="downsell1-tab" data-toggle="pill" href="#downsell1" role="tab" aria-controls="downsell1" aria-selected="false">Downsell 1</a>
+                    <a class="nav-item nav-link" id="downsell2-tab" data-toggle="pill" href="#downsell2" role="tab" aria-controls="downsell2" aria-selected="false">Downsell 2</a>
+                </nav>
+
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <div class="tab-content py-5">
+                            <div class="tab-pane fade show active" id="page-view" role="tabpanel"
+                                aria-labelledby="page-view-tab">
+                                <button type="button"
+                                    onclick="document.querySelector('#page-view-t').select();document.execCommand('copy');"
+                                    class="btn btn-primary float-right my-3">Copy Code</button>
+                                <textarea name="" id="page-view-t" cols="100" rows="15"></textarea>
+                            </div>
+                            <div class="tab-pane fade" id="add-to-cart" role="tabpanel"
+                                aria-labelledby="add-to-cart-tab">
+                                <button type="button"
+                                    onclick="document.querySelector('#add-to-cart-t').select();document.execCommand('copy');"
+                                    class="btn btn-primary float-right my-3">Copy Code</button>
+                                <textarea name="" id="add-to-cart-t" cols="100" rows="15"></textarea>
+                            </div>
+                            <div class="tab-pane fade" id="purchase" role="tabpanel"
+                                aria-labelledby="purchase-tab">
+                                <button type="button"
+                                    onclick="document.querySelector('#purchase-t').select();document.execCommand('copy');"
+                                    class="btn btn-primary float-right my-3">Copy Code</button>
+                                <textarea name="" id="purchase-t" cols="100" rows="15"></textarea>
+                            </div>
+                            <div class="tab-pane fade" id="upsell1" role="tabpanel"
+                                aria-labelledby="upsell1-tab">
+                                <button type="button"
+                                    onclick="document.querySelector('#upsell1-t').select();document.execCommand('copy');"
+                                    class="btn btn-primary float-right my-3">Copy Code</button>
+                                <textarea name="" id="upsell1-t" cols="100" rows="15"></textarea>
+                            </div>    
+                            <div class="tab-pane fade" id="upsell2" role="tabpanel"
+                                aria-labelledby="upsell2-tab">
+                                <button type="button"
+                                    onclick="document.querySelector('#upsell2-t').select();document.execCommand('copy');"
+                                    class="btn btn-primary float-right my-3">Copy Code</button>
+                                <textarea name="" id="upsell2-t" cols="100" rows="15"></textarea>
+                            </div>  
+                            <div class="tab-pane fade" id="downsell1" role="tabpanel"
+                                aria-labelledby="downsell1-tab">
+                                <button type="button"
+                                    onclick="document.querySelector('#downsell1-t').select();document.execCommand('copy');"
+                                    class="btn btn-primary float-right my-3">Copy Code</button>
+                                <textarea name="" id="downsell1-t" cols="100" rows="15"></textarea>
+                            </div>   
+                            <div class="tab-pane fade" id="downsell2" role="tabpanel"
+                                aria-labelledby="downsell2-tab">
+                                <button type="button"
+                                    onclick="document.querySelector('#downsell2-t').select();document.execCommand('copy');"
+                                    class="btn btn-primary float-right my-3">Copy Code</button>
+                                <textarea name="" id="downsell2-t" cols="100" rows="15"></textarea>
+                            </div>                                                                                                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+        document.querySelectorAll('input').forEach(el => {
+            el.addEventListener('change', function (e) {
+                fire();
+                var pixelID = document.getElementById('pixelID');
+            });
+        })
+
+
+        function fire() {
+            document.getElementById('page-view-t').value = `
+            \u003Cscript\u003E
+		    !function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		
+        fbq('init', '${pixelID.value}');
+		fbq('track', 'PageView');
+        fbq('track', 'ViewContent');
+        \u003C/script\u003E
+        \u003Cnoscript\u003E
+		\u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=PageView&noscript=1" /\u003E
+    \u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=ViewContent&noscript=1" /\u003E
+            \u003C/noscript\u003E`;
+
+            document.getElementById('add-to-cart-t').value = `
+    \u003Cscript\u003E
+		    !function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		
+        fbq('init', '${pixelID.value}');
+		fbq('track', 'PageView');
+        fbq('track', 'AddToCart');
+        \u003C/script\u003E
+        \u003Cnoscript\u003E
+		\u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=PageView&noscript=1" /\u003E
+    \u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=AddToCart&noscript=1" /\u003E
+            \u003C/noscript\u003E`;
+
+            document.getElementById('purchase-t').value = `
+    \u003Cscript\u003E
+		    !function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		
+        fbq('init', '${pixelID.value}');
+		fbq('track', 'PageView');
+        fbq('track', 'Purchase');
+        \u003C/script\u003E
+        \u003Cnoscript\u003E
+		\u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=PageView&noscript=1" /\u003E
+    \u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=Purchase&noscript=1" /\u003E
+            \u003C/noscript\u003E`;
+
+            document.getElementById('upsell1-t').value = `
+    \u003Cscript\u003E
+		    !function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		
+        fbq('init', '${pixelID.value}');
+		fbq('track', 'PageView');
+        fbq('trackCustom', 'upsell1');
+        var button = document.querySelectorAll('button');
+        if(fbq){
+            button.forEach(el => {
+            var ex = el.getAttribute("onclick");
+            el.setAttribute("onclick", "")
+            el.addEventListener('click', function (e) {
+            fbq('trackCustom', 'UpSell1Purchase');          
+            eval(ex)
+        }, false
+        );
+        }
+        )}
+        \u003C/script\u003E
+        \u003Cnoscript\u003E
+		\u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=PageView&noscript=1" /\u003E
+    \u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=upsell1&noscript=1" /\u003E
+            \u003C/noscript\u003E`;
+
+            document.getElementById('upsell2-t').value = `
+    \u003Cscript\u003E
+		    !function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+        var button = document.querySelectorAll('button');
+        if(fbq){
+            button.forEach(el => {
+            var ex = el.getAttribute("onclick");
+            el.setAttribute("onclick", "")
+            el.addEventListener('click', function (e) {
+            fbq('trackCustom', 'upsell2Purchase');          
+            eval(ex)
+        }, false
+        );
+        }
+        )}            
+		
+        fbq('init', '${pixelID.value}');
+		fbq('track', 'PageView');
+        fbq('trackCustom', 'upsell2');
+        \u003C/script\u003E
+        \u003Cnoscript\u003E
+		\u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=PageView&noscript=1" /\u003E
+    \u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=upsell2&noscript=1" /\u003E
+            \u003C/noscript\u003E`;
+
+            document.getElementById('downsell1-t').value = `
+    \u003Cscript\u003E
+		    !function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            
+            var button = document.querySelectorAll('button');
+        if(fbq){
+            button.forEach(el => {
+            var ex = el.getAttribute("onclick");
+            el.setAttribute("onclick", "")
+            el.addEventListener('click', function (e) {
+            fbq('trackCustom', 'downsell1Purchase');          
+            eval(ex)
+        }, false
+        );
+        }
+        )}             
+		
+        fbq('init', '${pixelID.value}');
+		fbq('track', 'PageView');
+        fbq('trackCustom', 'downsell1');
+        \u003C/script\u003E
+        \u003Cnoscript\u003E
+		\u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=PageView&noscript=1" /\u003E
+    \u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=downsell1&noscript=1" /\u003E
+            \u003C/noscript\u003E`;
+
+            document.getElementById('downsell2-t').value = `
+    \u003Cscript\u003E
+		    !function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            
+            var button = document.querySelectorAll('button');
+        if(fbq){
+            button.forEach(el => {
+            var ex = el.getAttribute("onclick");
+            el.setAttribute("onclick", "")
+            el.addEventListener('click', function (e) {
+            fbq('trackCustom', 'downsell2Purchase');          
+            eval(ex)
+        }, false
+        );
+        }
+        )}             
+		
+        fbq('init', '${pixelID.value}');
+		fbq('track', 'PageView');
+        fbq('trackCustom', 'downsell2');
+        \u003C/script\u003E
+        \u003Cnoscript\u003E
+		\u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=PageView&noscript=1" /\u003E
+    \u003Cimg height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=${pixelID.value}&ev=downsell2&noscript=1" /\u003E
+            \u003C/noscript\u003E`;               
+        }
+
+    </script>
+</body>
+
+</html>
